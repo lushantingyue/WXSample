@@ -14,7 +14,9 @@ import com.taobao.weex.common.WXRenderStrategy;
 
 import java.util.HashMap;
 
-
+/**
+ *  <III> fragment渲染 Js 脚本
+ */
 public class WeexFragment extends Fragment implements IWXRenderListener {
 
 

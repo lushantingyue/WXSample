@@ -16,6 +16,9 @@ public class WXFragmentActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        /**
+         *  <III> 创建 fragement需提供 Js地址
+         */
         WeexFragment weexFragment = WeexFragment.newInstance(EXAMPLE_URL);
         FragmentTransaction transaction = getFragmentManager().beginTransaction();
         transaction.add(R.id.content_fragment, weexFragment);
