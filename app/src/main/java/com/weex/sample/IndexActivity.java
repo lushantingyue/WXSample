@@ -5,6 +5,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+/**
+ *  首页
+ */
 public class IndexActivity extends AppCompatActivity {
 
     @Override
