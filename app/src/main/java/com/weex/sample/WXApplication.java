@@ -26,6 +26,7 @@ public class WXApplication extends Application {
         InitConfig config = new InitConfig.Builder().setImgAdapter(new ImageAdapter()).build();
         WXSDKEngine.initialize(this, config);
         try {
+            // <II> 添加 扩展组件和模块时, 都需要 WXSDKEngine注册
             WXSDKEngine.registerModule("poneInfo", PhoneInfoModule.class);
             WXSDKEngine.registerComponent("rich", RichText.class, false);
         } catch (WXException e) {
