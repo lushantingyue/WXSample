@@ -15,13 +15,13 @@ import java.util.Map;
 
 public class PhoneInfoModule extends WXModule {
 
-  @JSMethod(uiThread = false)
-  public void getPhoneInfo(JSCallback callback) {
-    Map<String, String> infos = new HashMap<>();
-    infos.put("board", Build.BOARD);
-    infos.put("brand", Build.BRAND);
-    infos.put("device", Build.DEVICE);
-    infos.put("model", Build.MODEL);
-    callback.invoke(infos);
-  }
+    @JSMethod(uiThread = false)
+    public void getPhoneInfo(JSCallback callback) {
+        Map<String, String> infos = new HashMap<>();
+        infos.put("board", Build.BOARD);
+        infos.put("brand", Build.BRAND);
+        infos.put("device", Build.DEVICE);
+        infos.put("model", Build.MODEL);
+        callback.invoke(infos);
+    }
 }

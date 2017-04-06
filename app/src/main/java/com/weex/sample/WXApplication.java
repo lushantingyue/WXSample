@@ -20,16 +20,16 @@ import com.weex.sample.extend.module.PhoneInfoModule;
  */
 public class WXApplication extends Application {
 
-  @Override
-  public void onCreate() {
-    super.onCreate();
-    InitConfig config = new InitConfig.Builder().setImgAdapter(new ImageAdapter()).build();
-    WXSDKEngine.initialize(this, config);
-    try {
-      WXSDKEngine.registerModule("poneInfo", PhoneInfoModule.class);
-      WXSDKEngine.registerComponent("rich", RichText.class, false);
-    } catch (WXException e) {
-      e.printStackTrace();
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        InitConfig config = new InitConfig.Builder().setImgAdapter(new ImageAdapter()).build();
+        WXSDKEngine.initialize(this, config);
+        try {
+            WXSDKEngine.registerModule("poneInfo", PhoneInfoModule.class);
+            WXSDKEngine.registerComponent("rich", RichText.class, false);
+        } catch (WXException e) {
+            e.printStackTrace();
+        }
     }
-  }
 }

@@ -20,22 +20,22 @@ import com.taobao.weex.ui.component.WXVContainer;
 
 public class RichText extends WXComponent<TextView> {
 
-  public RichText(WXSDKInstance instance, WXDomObject dom, WXVContainer parent) {
-    super(instance, dom, parent);
-  }
+    public RichText(WXSDKInstance instance, WXDomObject dom, WXVContainer parent) {
+        super(instance, dom, parent);
+    }
 
-  @Override
-  protected TextView initComponentHostView(@NonNull Context context) {
-    TextView textView = new TextView(context);
-    textView.setTextSize(30);
-    textView.setTextColor(Color.BLACK);
-    return textView;
-  }
+    @Override
+    protected TextView initComponentHostView(@NonNull Context context) {
+        TextView textView = new TextView(context);
+        textView.setTextSize(30);
+        textView.setTextColor(Color.BLACK);
+        return textView;
+    }
 
-  @WXComponentProp(name = "tel")
-  public void setTel(String number) {
-    SpannableString spannableString=new SpannableString(number);
-    spannableString.setSpan(new URLSpan("tel:"+number), 0, number.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-    getHostView().setText(spannableString);
-  }
+    @WXComponentProp(name = "tel")
+    public void setTel(String number) {
+        SpannableString spannableString = new SpannableString(number);
+        spannableString.setSpan(new URLSpan("tel:" + number), 0, number.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        getHostView().setText(spannableString);
+    }
 }
