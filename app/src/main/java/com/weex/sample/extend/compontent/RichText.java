@@ -18,6 +18,9 @@ import com.taobao.weex.ui.component.WXVContainer;
  * Created by lixinke on 2017/2/17.
  */
 
+/**
+ *  <II> 继承Weex内置组件, 实现自定义组件
+ */
 public class RichText extends WXComponent<TextView> {
 
     public RichText(WXSDKInstance instance, WXDomObject dom, WXVContainer parent) {

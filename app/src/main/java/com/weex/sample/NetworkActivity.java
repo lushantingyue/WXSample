@@ -13,6 +13,9 @@ import com.taobao.weex.common.WXRenderStrategy;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ *  <I> 从网络渲染 JS脚本
+ */
 public class NetworkActivity extends AppCompatActivity implements IWXRenderListener {
 
     private static String TEST_URL = "http://dotwe.org/raw/dist/6fe11640e8d25f2f98176e9643c08687.bundle.js";

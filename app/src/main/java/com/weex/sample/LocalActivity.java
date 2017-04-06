@@ -12,6 +12,9 @@ import com.taobao.weex.utils.WXFileUtils;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ *  <I> 从本地渲染 JS脚本
+ */
 public class LocalActivity extends AppCompatActivity implements IWXRenderListener {
 
     WXSDKInstance mWXSDKInstance;

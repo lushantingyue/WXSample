@@ -13,6 +13,10 @@ import java.util.Map;
  * Created by lixinke on 2017/3/3.
  */
 
+/**
+ *  <II> 自定义Module:
+ *              扩展 非UI 的特定功能。例如 sendHttp、openURL 等。
+ */
 public class PhoneInfoModule extends WXModule {
 
     @JSMethod(uiThread = false)
